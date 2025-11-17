@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diabetes Prediction</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background: #f4f7fb;
+      margin: 0;
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .card {
+      width: 360px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(20,30,50,0.08);
+    }
+    h1 {
+      margin: 0 0 14px 0;
+      font-size: 20px;
+      text-align: center;
+      color: #17224d;
+    }
+    label { font-size: 13px; color: #354167; }
+    .row { margin-bottom: 12px; }
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #d7dbe9;
+      margin-top: 6px;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 11px;
+      border-radius: 10px;
+      border: none;
+      background: linear-gradient(90deg,#2a7cff,#0047c9);
+      color: white;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:disabled { opacity: 0.6; cursor: not-allowed; }
+    #result {
+      margin-top: 16px;
+      padding: 14px;
+      border-radius: 8px;
+      background: #f6f8ff;
+      font-size: 15px;
+      color: #14203a;
+    }
+    .muted { font-size: 12px; color: #7a859a; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Diabetes Prediction</h1>
+    <form id="prediction-form">
+      <div class="row">
+        <label>Pregnancies</label>
+        <input id="pregnancies" type="number" min="0" step="1" required value="0" />
+      </div>
+      <div class="row">
+        <label>Glucose</label>
+        <input id="glucose" type="number" min="0" step="1" required value="120" />
+      </div>
+      <div class="row">
+        <label>Blood Pressure</label>
+        <input id="blood_pressure" type="number" min="0" step="1" required value="70" />
+      </div>
+      <div class="row">
+        <label>Skin Thickness</label>
+        <input id="skin_thickness" type="number" min="0" step="1" required value="20" />
+      </div>
+      <div class="row">
+        <label>Insulin</label>
+        <input id="insulin" type="number" min="0" step="1" required value="80" />
+      </div>
+      <div class="row">
+        <label>BMI</label>
+        <input id="bmi" type="number" min="0" step="0.1" required value="25.0" />
+      </div>
+      <div class="row">
+        <label>Diabetes Pedigree Function</label>
+        <input id="diabetes_pedigree_function" type="number" min="0" step="0.001" required value="0.5" />
+      </div>
+      <div class="row">
+        <label>Age</label>
+        <input id="age" type="number" min="0" step="1" required value="30" />
+      </div>
+
+      <button id="predict-btn" type="submit">Predict</button>
+
+      <div id="result" hidden></div>
+      <div class="muted">Tip: Serve this page with a local server (python -m http.server) and run Flask on port 5000.</div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
