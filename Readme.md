@@ -1,8 +1,8 @@
-🚀  Diabetes Prediction Using Machine Learning:
+## Diabetes Prediction Using Machine Learning:
 
         A fast, full-stack ML application that predicts diabetes risk from key health metrics. This project delivers a clean, end-to-end pipeline — from data science to live API deployment — wrapped in a sleek web interface.
 
-⚡ End-to-End Diabetes Predictor — Full-Stack ML at Work:
+## End-to-End Diabetes Predictor — Full-Stack ML at Work:
         This project brings machine learning to life with a high-impact diabetes prediction system. Built using the PIMA Indians Diabetes Dataset, it moves beyond simple modelling to deliver a fully deployable solution.
 
         Starting with deep exploratory data analysis, the workflow advances into feature engineering, model training, and hyperparameter tuning using XGBoost. The final model is deployed through a robust Flask REST API, enabling real-time predictions from any client.
@@ -17,6 +17,7 @@
 
 <!-- !\[Demo GIF](./demo.gif) -->
 
+---
 
 ## Features
 
@@ -36,21 +37,17 @@
 
 ---
 
-\## Technology Stack
+## Technology Stack
 
+- **Backend:** Python, Flask
 
+- **Machine Learning:** Scikit-learn, Pandas, NumPy, XGBoost
 
-\-   \*\*Backend:\*\* Python, Flask
+- **Data Visualization:** Matplotlib, Seaborn
 
-\-   \*\*Machine Learning:\*\* Scikit-learn, Pandas, NumPy, XGBoost
+- **Frontend:** HTML, CSS, JavaScript (with Fetch API)
 
-\-   \*\*Data Visualization:\*\* Matplotlib, Seaborn
-
-\-   \*\*Frontend:\*\* HTML, CSS, JavaScript (with Fetch API)
-
-\-   \*\*Development Environment:\*\* Jupyter Notebook, Git
-
-
+- **Development Environment:** Jupyter Notebook, Git.
 
 ---
 
@@ -98,9 +95,6 @@ You need to have `git` and `Python 3.8+` installed on your system.
 
 ---
 
-
-
----
 
 ## How to Run
 
